@@ -20,4 +20,11 @@ app.use(express.static("pulic")) //any static files(img,video) came then it will
 
 app.use(cookieParser())
 
+
+//importing routers
+
+import userRouter from './routes/user.routes.js'
+
+app.use('/api/v1/users',userRouter);
+
 export {app};
