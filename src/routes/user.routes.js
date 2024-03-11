@@ -7,18 +7,19 @@ const router=Router();
 
  //"/api/v1/users/register then it called registerUser method api/v1/users come from app.js route"
 
-router.route('/register').post(
+ router.route("/register").post(
     upload.fields([
-        {name:"avtar",
-        maxCount:1
-    },
         {
-            name:"coverImage",
-            maxCount:1
+            name: "avatar",
+            maxCount: 1
+        }, 
+        {
+            name: "coverImage",
+            maxCount: 1
         }
     ]),
-    
-    registerUser)
+    registerUser
+    )
 
 
 
