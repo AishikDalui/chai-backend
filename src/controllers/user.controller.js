@@ -98,13 +98,14 @@ const registerUser=asyncHandler(async(req,res)=>{
 
 })
 
+
 const loginUser=asyncHandler(async(req,res)=>{
     //take email and username and passwrod from req.body
     //check username or email field is empty or not
     //find username or emailid from data base
     //compare the password
     //generate access and refresh token
-    //remove password and cookie filed from the database
+    //remove password and refresh token from the database
     //send cookie
 
     const {username,email,password}=req.body;
